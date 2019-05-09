@@ -8,20 +8,44 @@ $text-color: #333;
 $bg-color: antiquewhite;
 $box-shadow: 0 5px 2px 0 rgba(20, 10, 30, 0.2);
 
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+@mixin square($size, $color) {
+   width: $size;
+   height: $size;
+   background-color: $color;
+}
+
+
+
 body{
 margin: $auto-margin;
  h2{
   color:$text-color ;
+  @include square(150px, yellow);
  }
 
 }
 .main_area{
+@include border-radius (15px);
 max-width: $max-width;
 background: $bg-color;
 margin: $auto-margin;
 padding: $padding10all;
 }
 
-.class1,.class2{
+.class1{
 color:red;
 }
+
+.class2{
+@extend .class1;
+font-size:1.2em;
+}
+
+
