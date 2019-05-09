@@ -8,7 +8,7 @@ $text-color: #333;
 $bg-color: antiquewhite;
 $box-shadow: 0 5px 2px 0 rgba(20, 10, 30, 0.2);
 
-
+//mixin
 @mixin border-radius($radius) {
   -webkit-border-radius: $radius;
      -moz-border-radius: $radius;
@@ -27,7 +27,7 @@ body{
 margin: $auto-margin;
  h2{
   color:$text-color ;
-  @include square(150px, yellow);
+  @include square(150px, yellow); //using mixin
  }
 
 }
