@@ -1,3 +1,27 @@
+//variables
+
+$max-width: 1100px;
+$auto-margin: 0 auto;
+$padding10all:10px;
+$title-font: normal 24px Helvetica, sans-serif;
+$text-color: #333;
+$bg-color: antiquewhite;
+$box-shadow: 0 5px 2px 0 rgba(20, 10, 30, 0.2);
+
+body{
+margin: $auto-margin;
+ h2{
+  color:$text-color ;
+ }
+
+}
+.main_area{
+max-width: $max-width;
+background: $bg-color;
+margin: $auto-margin;
+padding: $padding10all;
+}
+
 .class1,.class2{
 color:red;
 }
